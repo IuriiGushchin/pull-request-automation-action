@@ -4,17 +4,17 @@ const github = require("@actions/github");
 async function run() {
   try {
     // `who-to-greet` input defined in action metadata file
-    // const nameToGreet = core.getInput("who-to-greet");
-    // const orgName = core.getInput("ORGANIZATION");
-    // const projectNumber = core.getInput("PROJECT_NUMBER");
+    const nameToGreet = core.getInput("who-to-greet");
+    const orgName = core.getInput("ORGANIZATION");
+    const projectNumber = core.getInput("PROJECT_NUMBER");
 
-    // const myToken = core.getInput("GITHUB_TOKEN");
+    const myToken = core.getInput("GITHUB_TOKEN");
 
-    const nameToGreet = "Yuri";
-    const orgName = "TestingOrganizationForAutomation";
-    const projectNumber = "1";
+    // const nameToGreet = "Yuri";
+    // const orgName = "TestingOrganizationForAutomation";
+    // const projectNumber = "1";
 
-    const myToken = "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";
+    // const myToken = "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";
     const octokit = github.getOctokit(myToken);
 
     const projectQuery = `
