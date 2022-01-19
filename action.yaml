@@ -17,6 +17,10 @@ inputs:
     description: "Number of the project"
     required: true
     default: "1"
+  PR_ID:
+    description: "ID of pull request"
+    required: true
+    default: "1"
 outputs:
   time: # id of output
     description: "The time we greeted you"
