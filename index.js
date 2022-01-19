@@ -7,7 +7,7 @@ try {
   const orgName = core.jetInput("ORGANIZATION");
   const projectNumber = core.getInput("PROJECT_NUMBER");
 
-  const myToken = core.getInput("token");
+  const myToken = core.getInput("GITHUB_TOKEN");
   const octokit = github.getOctokit(myToken);
 
   query = `
