@@ -34,7 +34,7 @@ async function run() {
     }`;
     const result = await octokit.graphql(query, {
       org: orgName,
-      number: projectNumber,
+      number: parseInt(projectNumber),
     });
     console.log(result);
 
