@@ -1,18 +1,14 @@
-name: "Hello World"
-description: "Greet someone and record the time"
+name: "Moving cards automation"
+description: "Moving project cards to a Pull Requested column of the project"
 inputs:
-  who-to-greet: # id of input
-    description: "Who to greet"
-    required: true
-    default: "World"
   GITHUB_TOKEN:
     description: "Github token"
     required: true
-    default: "0"
+    default: "1"
   ORGANIZATION:
     description: "Organization name"
     required: true
-    default: "TestingOrganizationForAutomation"
+    default: "1"
   PROJECT_NUMBER:
     description: "Number of the project"
     required: true
@@ -21,9 +17,6 @@ inputs:
     description: "ID of pull request"
     required: true
     default: "1"
-outputs:
-  time: # id of output
-    description: "The time we greeted you"
 runs:
   using: "node16"
   main: "index.js"
