@@ -1,0 +1,24 @@
+{
+  "name": "pull-request-automation-action",
+  "version": "1.0.0",
+  "description": "action to automate moving card to pull requests column",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IuriiGushchin/pull-request-automation-action.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IuriiGushchin/pull-request-automation-action/issues"
+  },
+  "homepage": "https://github.com/IuriiGushchin/pull-request-automation-action#readme",
+  "dependencies": {
+    "@actions/core": "^1.6.0",
+    "@actions/github": "^5.0.0"
+  }
+}
