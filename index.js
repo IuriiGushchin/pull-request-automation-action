@@ -5,6 +5,7 @@ async function run() {
   try {
     const pullRequestId = core.getInput("PR_ID");
     const branchName = core.getInput("BRANCH_NAME");
+    console.log(branchName);
 
     const myToken = core.getInput("GITHUB_TOKEN");
     const octokit = github.getOctokit(myToken);
@@ -83,7 +84,6 @@ async function run() {
         issue_number: linkedIssueNumber,
         labels: labels,
       });
-      console.log("Edited issue data --- ", result);
     }
   } catch (error) {
     core.setFailed(error.message);

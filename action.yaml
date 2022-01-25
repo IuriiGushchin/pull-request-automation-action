@@ -1,5 +1,5 @@
-name: "Moving cards automation"
-description: "Moving project cards to a Pull Requested column of the project"
+name: "Labeling cards automation"
+description: "Labeling cards when they was merged to dev/test"
 inputs:
   GITHUB_TOKEN:
     description: "Github token"
