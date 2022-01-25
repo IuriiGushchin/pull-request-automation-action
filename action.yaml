@@ -5,12 +5,8 @@ inputs:
     description: "Github token"
     required: true
     default: "1"
-  ORGANIZATION:
-    description: "Organization name"
-    required: true
-    default: "1"
-  PROJECT_NUMBER:
-    description: "Number of the project"
+  BRANCH_NAME:
+    description: "Branch name"
     required: true
     default: "1"
   PR_ID:
